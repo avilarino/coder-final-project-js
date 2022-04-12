@@ -19,13 +19,13 @@
 <body>
   <nav>
     <input id="nav-toggle" type="checkbox">
-    <div class="logo"><i class="logo-apple fa-brands fa-apple"></i></div>
+    <div class="logo"><i class="c-grey fa-brands fa-apple"></i></div>
     <ul class="links">
       <li><a href="#home"></a></li>
       <li><a href="#work">home</a></li>
       <li><a href="#work">coins</a></li>
       <li><a href="#projects">market</a></li>
-      <li><a href="#contact">contact</a></li>
+      <!--<li><a href=""><i class="c-grey fa-solid fa-bag-shopping"></i></a></li>-->
     </ul>
     <label for="nav-toggle" class="icon-burger">
       <div class="line"></div>
@@ -133,6 +133,9 @@
 </section>
 
 
+<!--carrousel-->
+
+
 <div class="container">
 	<div class="row">
 		<div class="col-md-12">
@@ -165,10 +168,61 @@
 											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
 										</ul>
 									</div>
-                  <div class="d-flex justify-content-center ">
-                    <a href="#" class="button-cart-green mr-5"><i class="fa-black fa-solid fa-cart-shopping"></i><i class="fa-black fa-solid fa-plus"></i></a>
-                    <a href="#" class="button-cart-red"><i class="fa-black fa-solid fa-cart-shopping"></i><i class="fa-black fa-solid fa-minus"></i></a>
-                  </div>
+																							<!-- Trigger/Open The Modal -->
+														<button id="myBtn">Open Modal</button>
+
+														<!-- The Modal -->
+														<div id="myModal" class="modal-1">
+
+															<!-- Modal content -->
+															<div class="modal-content-1">
+
+
+																<p class="close">&times;</p>
+																<i class="c-grey fa-brands fa-apple fa-2x"></i>
+																
+
+																<form class="modal-form">
+																	<label for="product-1">Product</label>
+																	<select id="product-1" name="product-1 value="product-1">
+																	<option value="product-1">Aple-watch-1</option>
+
+																	
+																		
+																	</select>
+
+																	<label for="size">Size</label>
+																	<select id="size" name="size">
+																		<option value="small">Small</option>
+																		<option value="l">L</option>
+																		<option value="xl">Xl</option>
+																		<option value="xxl">XXL</option>
+																	</select>
+																	
+																	<label for="stock">Cantidad</label>
+																	<input type="number" id="stock" name="stock"><br>
+
+																	<label for="lname">Color:</label>
+																	<input type="color" id="lname" name="lname"><br>
+																	
+																	<label for="discount">Discount Code:</label>
+																	<input type="text" id="discount" name="discount"><br>
+
+
+
+																	<input onclick="sendToCart()" class="button-add-to-cart" type="submit" value="Add to Cart">
+																</form>
+
+
+															</div>
+
+														</div>
+									
+						
+
+									
+									
+
 									
 								</div>						
 							</div>
@@ -343,6 +397,9 @@
 </div>
 
 
+
+
+
 <section>
 <div class="container_call_to_action">
 	<div class="container_call_to_action_text">
@@ -350,7 +407,7 @@
 		<p>let your e-mail here, and you`ll recive </p>
 		<form class="call_to_action_form">
 			<input type="email" id="email" class="form-control" name="email" placeholder="your email" required>
-			<button class="yellow-button-form" type="submit">Suscribe</button>
+			<button onclick="usuariosMails()" class="yellow-button-form" type="submit">Suscribe</button>
 		</form>
 	</div>
 </div>
@@ -407,12 +464,14 @@
 
 
 
+<script src="main.js"></script>
+<script src="modal.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 
-
-
-
-
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 
 
 

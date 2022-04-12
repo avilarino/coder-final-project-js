@@ -1,3 +1,78 @@
+/* The Modal (background) */
+.modal-1 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 5555; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content-1 {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+	height: 100%;
+	display: flex;
+	flex-direction: column; /* Could be more or less, depending on screen size */
+	justify-content: center;
+
+}
+
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+	position: relative;
+	left: 100px
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.modal-form {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: start;
+}
+
+.modal-form input {
+	width: 100%;
+}
+
+.modal-form select {
+	width: 100%;
+}
+
+.button-add-to-cart {
+	color: #fff;
+	border-radius: 30px;
+	font-size: 18px;
+	padding: 15px 40px;
+	display: inline-block;
+	background-color: green;
+	box-shadow: 0 15px 40px green;
+	text-decoration: none;
+	margin-bottom: 30px;
+	text-decoration: none;
+	border: none
+}
 
 /* constants ---------------------------------- */
 
@@ -44,18 +119,13 @@ section {
 	text-decoration: none
 }
 
-.logo-apple {
-  color: #cccccc
-}
-
-.logo-apple:hover {
-	color: white;
-	cursor: pointer
-}
-
 .logo-apple-black {
 	color: #1d1d1f;
 	margin-right: 10px
+}
+
+.c-grey {
+	color: #cccccc;
 }
 
 /* nav -----------------------------------------*/
@@ -117,6 +187,7 @@ nav .icon-burger {
 	right: 5%;
 	top: 50%;
 	transform: translateY(-50%);
+	margin-right: 50px
 }
 
 nav .icon-burger .line {
@@ -386,6 +457,12 @@ nav .icon-burger .line {
 	color: #ffc000;
 }
 
+/* modal -------------- */
+
+
+
+
+
 
 /* section CALL TO ACTION */
 
@@ -519,6 +596,8 @@ nav .icon-burger .line {
 
 
 /* responsive design ---------------------------------*/
+
+
 
 @media screen and (max-width: 768px) {
 	nav .logo {

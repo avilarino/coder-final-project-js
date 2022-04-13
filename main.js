@@ -33,6 +33,11 @@ class Compra   {
 const carrito = []
 
 const sendToCart = () => {
+
+  addEventListener("click", function(event){
+    event.preventDefault()
+  });
+
   let nombreWatch = document.getElementById("product-1").value
   let precioWatch = document.getElementById("price-product-1").value
   let sizeWatch = document.getElementById("size").value
@@ -40,14 +45,12 @@ const sendToCart = () => {
   let colorWatch = document.getElementById("color-product").value
   let discount = document.getElementById("discount").value
 
-    if (code != "CODER"){
+    if (discount != "CODER"){
       console.log(`el código de descuento es incorrecto`)
-      console.log(`el total a pagar es ${precioWatch}`)
-    } else if (discount === "CODER") {
-      total = (precioWatch * 10) % 100
-      final = precioWatch - total;
-      console.log(`el precio a pagar con descuento es ${final}`)
-
+      console.log(`el total a pagar es ${precioWatch * stockWatch}`)
+    } else  {
+      let total = (precioWatch - ((precioWatch*10)/100))* stockWatch
+      console.log(`el precio a pagar con descuento es ${total}`)
     }
 
   let Envio1 = new Compra(nombreWatch, precioWatch, sizeWatch,colorWatch,stockWatch)

@@ -1,3 +1,7 @@
+
+
+// entregable clase 8 documentById - Agustin Vilariño
+
 class Usuario  {
   constructor(mail){
     this.mail = mail;
@@ -7,7 +11,7 @@ class Usuario  {
 const newsLetter = []
 
 const usuariosMails = () => {
-  let nombreMail = prompt("cual es tu mail")
+  let nombreMail = document.getElementById("email").value
   let usuario1 = new Usuario(nombreMail)
   newsLetter.push(usuario1);
   console.log(newsLetter)
@@ -29,23 +33,22 @@ class Compra   {
 const carrito = []
 
 const sendToCart = () => {
-  let nombreWatch = prompt("¿Cúal es el nombre del reloj?")
-  let precioWatch = parseInt(prompt("¿Cúal es el precio del reloj?"))
-  let sizeWatch = prompt("¿Cúal es el size del reloj?")
-  let colorWatch = prompt("¿De qué color es el reloj?")
-  let stockWatch = prompt("¿Qué cantidad?")
-  let code = prompt("¿tenes código de descuento?");
+  let nombreWatch = document.getElementById("product-1").value
+  let precioWatch = document.getElementById("price-product-1").value
+  let sizeWatch = document.getElementById("size").value
+  let stockWatch = document.getElementById("stock").value
+  let colorWatch = document.getElementById("color-product").value
+  let discount = document.getElementById("discount").value
 
-  
-    if (code === "CODER"){
+    if (code != "CODER"){
+      console.log(`el código de descuento es incorrecto`)
+      console.log(`el total a pagar es ${precioWatch}`)
+    } else if (discount === "CODER") {
       total = (precioWatch * 10) % 100
       final = precioWatch - total;
-      alert(`el precio a pagar con descuento es ${final}`)
-    } else if (code != "CODER") {
-      alert(`el código de descuento es incorrecto`)
-      alert(`el total a pagar es ${precioWatch}`)
-    } 
+      console.log(`el precio a pagar con descuento es ${final}`)
 
+    }
 
   let Envio1 = new Compra(nombreWatch, precioWatch, sizeWatch,colorWatch,stockWatch)
   carrito.push(Envio1)

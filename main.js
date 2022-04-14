@@ -64,19 +64,18 @@ const sendToCart = () => {
 
 // navbar ---------------------------------------
 
-const navbar = document.getElementById("navbar")
+const navbar = document.getElementById("navbar");
 
 window.onscroll = function(){
   const top = window.scrollY;
 
   if(top >= 100){
-    navbar.classList.add("c-grey")
+    navbar.classList.add("c-grey");
+
     
   } else {
-    navbar.classList.remove("c-grey")
+    navbar.classList.remove("c-grey");
     
   }
 }
-
-
 

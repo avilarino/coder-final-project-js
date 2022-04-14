@@ -60,6 +60,26 @@
 	width: 100%;
 }
 
+.button_open_modal {
+	color: #fff;
+	border-radius: 30px;
+	font-size: 18px;
+	padding: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: green;
+	box-shadow: 0 15px 40px green;
+	text-decoration: none;
+	margin-bottom: 30px;
+	text-decoration: none;
+	border: none;
+	width: 150px;
+	height: 40px;
+	text-align: center
+}
+
 .button-add-to-cart {
 	color: #fff;
 	border-radius: 30px;
@@ -136,9 +156,11 @@ section {
 	color: #1d1d1f;
 }
 
-.logo.c-grey {
+.logo-apple.c-grey {
 	color: #cccccc;
 }
+
+
 
 /* nav -----------------------------------------*/
 
@@ -213,6 +235,11 @@ nav .icon-burger .line {
 
 #navbar.c-grey {
 	background-color: #1d1d1f;;
+}
+
+
+span {
+	color: green
 }
 
 /* finish nav ----------------------------------*/

@@ -133,7 +133,11 @@ section {
 }
 
 .c-black {
-	color: black
+	color: #1d1d1f;
+}
+
+.logo.c-grey {
+	color: #cccccc;
 }
 
 /* nav -----------------------------------------*/
@@ -146,7 +150,7 @@ nav {
 	top: 0;
 	padding: 0 5%;
 	height: 50px;
-  background-color: #1d1d1f;
+  background-color: #f9a743;
 }
 nav .logo {
 	float: left;
@@ -205,6 +209,10 @@ nav .icon-burger .line {
 	margin: 5px;
 	border-radius: 3px;
 	transition: all .3s ease-in-out;
+}
+
+#navbar.c-grey {
+	background-color: #1d1d1f;;
 }
 
 /* finish nav ----------------------------------*/
@@ -323,7 +331,10 @@ nav .icon-burger .line {
 }
 
 .card_watch {
-	margin-right: 100px
+	margin-right: 100px;
+	display: flex;
+	flex-direction: column;
+	align-items: center
 }
 
 .container_two_images {

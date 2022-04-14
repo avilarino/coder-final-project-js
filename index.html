@@ -51,17 +51,17 @@
 				<div class="container_section_two_icons ">
 					<i class=" fa-solid fa-clock fa-xl"></i>
 					<h3 class="mt-10"> Inteligence Alarm</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, inventore?</p>
+					<p>Choose your favorite Alarms and Notifications</p>
 				</div>
 				<div class="container_section_two_icons ">
 					<i class="fa-solid fa-heart-circle-check fa-xl"></i>
-					<h3 class="mt-10">Inteligence Alarm</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, inventore?</p>
+					<h3 class="mt-10">Your Health in a Clock</h3>
+					<p>Look your palpitations in the clock while doing another activity</p>
 				</div>
 				<div class="container_section_two_icons ">
 					<i class="fa-solid fa-person-walking fa-xl"></i>
-					<h3 class="mt-10">Inteligence Alarm</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, inventore?</p>
+					<h3 class="mt-10">measure kilometers</h3>
+					<p>You can see how many kilometers you run or steps done in a day</p>
 				</div>
 			</div>
 			<div class="container_image">
@@ -69,20 +69,20 @@
 			</div>
 			<div>
 				<div class="container_section_two_icons ">
-					<i class="fa-solid fa-clock fa-xl"></i>
-					<h3 class="mt-10">Inteligence Alarm</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, inventore?</p>
+					<i class="fa-solid fa-bottle-droplet fa-xl"></i>
+					<h3 class="mt-10">Take your Water</h3>
+					<p>Don´t forget to take a rest and drink Water with a good alarm</p>
 				</div>
 				
 				<div class="container_section_two_icons ">
-					<i class="fa-solid fa-heart-circle-check fa-xl"></i>
-					<h3 class="mt-10">Inteligence Alarm</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, inventore?</p>
+					<i class="fa-solid fa-music fa-xl"></i>
+					<h3 class="mt-10">Choose your favorite Music</h3>
+					<p>Listen your favorite music in spotify</p>
 				</div>
 				<div class="container_section_two_icons ">
-					<i class="fa-solid fa-person-walking fa-xl"></i>
-					<h3 class="mt-10">Inteligence Alarm</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, inventore?</p>
+					<i class="fa-solid fa-bell fa-xl"></i>
+					<h3 class="mt-10">Check your notifications</h3>
+					<p>Recive notifications from your best friends !</p>
 				</div>
 			</div>
 
@@ -133,41 +133,343 @@
 </section>
 
 
-<!--carrousel-->
+<!--galery-->
 
 
-<div class="container">
-	<div class="row">
-		<div class="col-md-12">
+
+	
 			<h1 class="title-apple-h1">Looking for your favorite Apple Watch</h1>
-			<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
-			<!-- Carousel indicators -->
-			<ol class="carousel-indicators">
-				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-				<li data-target="#myCarousel" data-slide-to="1"></li>
-				<li data-target="#myCarousel" data-slide-to="2"></li>
-			</ol>   
-			<!-- Wrapper for carousel items -->
-			<div class="carousel-inner">
-				<div class="carousel-item active">
-					<div class="row">
-						<div class="col-sm-3">
-							<div class="thumb-wrapper">
-								<div class="img-box">
-									<img src="./assets/images/showcase-3.png" class="img-fluid" alt="">
+		
+				<div class="galery">
+		
+							<div class="container_galery">
+								
+								<div class="card_watch">
+										<div class="container_galery_image">
+											<img class="galery_image" src="./assets/images/showcase-3.png" class="img-fluid" alt="">
+										</div>
+										
+											<h4>Apple iPad</h4>
+											<p class="item-price"><strike>$400.00</strike> <span>$369.00</span></p>
+											
+																									<!-- Trigger/Open The Modal -->
+																<button id="myBtn">Open Modal</button>
+
+																<!-- The Modal -->
+																<div id="myModal" class="modal-1">
+
+																	<!-- Modal content -->
+																	<div class="modal-content-1">
+
+
+																		<p class="close">&times;</p>
+																		<i class="c-grey fa-brands fa-apple fa-4x"></i>
+																		
+
+																		<form  class="modal-form">
+																			<label for="product-1">Product</label>
+																			<select id="product-1" name="product-1 value="product-1">
+																			<option value="product-1">Aple-watch-1</option>
+																			</select>
+
+																			<label for="product-1">Price</label>
+																			<select type="number" id="price-product-1" name="price-product-1 value="price-product-1">
+																			<option type="number" value="200">200</option>
+																			</select>
+
+																			<label for="size">Size</label>
+																			<select id="size" name="size">
+																				<option value="small">Small</option>
+																				<option value="l">L</option>
+																				<option value="xl">Xl</option>
+																				<option value="xxl">XXL</option>
+																			</select>
+																			
+																			<label for="stock">Cantidad</label>
+																			<input type="number" id="stock" name="stock">
+
+																			<label for="color-product">Color:</label>
+																			<select id="color-product" name="color-product">
+																				<option value="red">red</option>
+																				<option value="blue">blue</option>
+																				<option value="green">green</option>
+																				<option value="black">black</option>
+																			</select>
+																			<label for="discount">Discount Code:</label>
+																			<input type="text" id="discount" name="discount"><br>
+
+																			<input onClick="sendToCart()"  class="button-add-to-cart" type="submit" value="Add to Cart">
+																		</form>
+
+																	</div>
+																</div>
+
+									</div>
+									
+								<div>
+									<div class="container_galery_image">
+										<img class="galery_image" src="./assets/images/showcase-4.png" class="img-fluid" alt="">
+									</div>
+									
+										<h4>Apple iPad</h4>
+										<p class="item-price"><strike>$400.00</strike> <span>$369.00</span></p>
+										
+																								<!-- Trigger/Open The Modal -->
+															<button id="myBtn">Open Modal</button>
+
+															<!-- The Modal -->
+															<div id="myModal" class="modal-1">
+
+																<!-- Modal content -->
+																<div class="modal-content-1">
+
+
+																	<p class="close">&times;</p>
+																	<i class="c-grey fa-brands fa-apple fa-4x"></i>
+																	
+
+																	<form  class="modal-form">
+																		<label for="product-1">Product</label>
+																		<select id="product-1" name="product-1 value="product-1">
+																		<option value="product-1">Aple-watch-1</option>
+																		</select>
+
+																		<label for="product-1">Price</label>
+																		<select type="number" id="price-product-1" name="price-product-1 value="price-product-1">
+																		<option type="number" value="200">200</option>
+																		</select>
+
+																		<label for="size">Size</label>
+																		<select id="size" name="size">
+																			<option value="small">Small</option>
+																			<option value="l">L</option>
+																			<option value="xl">Xl</option>
+																			<option value="xxl">XXL</option>
+																		</select>
+																		
+																		<label for="stock">Cantidad</label>
+																		<input type="number" id="stock" name="stock">
+
+																		<label for="color-product">Color:</label>
+																		<select id="color-product" name="color-product">
+																			<option value="red">red</option>
+																			<option value="blue">blue</option>
+																			<option value="green">green</option>
+																			<option value="black">black</option>
+																		</select>
+																		<label for="discount">Discount Code:</label>
+																		<input type="text" id="discount" name="discount"><br>
+
+																		<input onClick="sendToCart()"  class="button-add-to-cart" type="submit" value="Add to Cart">
+																	</form>
+
+																</div>
+															</div>
+
 								</div>
-								<div class="thumb-content">
+							</div>
+							
+							<div class="container_galery">
+								
+								<div class="card_watch">
+										<div class="container_galery_image">
+											<img class="galery_image" src="./assets/images/showcase-5.png" class="img-fluid" alt="">
+										</div>
+										
+											<h4>Apple iPad</h4>
+											<p class="item-price"><strike>$400.00</strike> <span>$369.00</span></p>
+											
+																									<!-- Trigger/Open The Modal -->
+																<button id="myBtn">Open Modal</button>
+
+																<!-- The Modal -->
+																<div id="myModal" class="modal-1">
+
+																	<!-- Modal content -->
+																	<div class="modal-content-1">
+
+
+																		<p class="close">&times;</p>
+																		<i class="c-grey fa-brands fa-apple fa-4x"></i>
+																		
+
+																		<form  class="modal-form">
+																			<label for="product-1">Product</label>
+																			<select id="product-1" name="product-1 value="product-1">
+																			<option value="product-1">Aple-watch-1</option>
+																			</select>
+
+																			<label for="product-1">Price</label>
+																			<select type="number" id="price-product-1" name="price-product-1 value="price-product-1">
+																			<option type="number" value="200">200</option>
+																			</select>
+
+																			<label for="size">Size</label>
+																			<select id="size" name="size">
+																				<option value="small">Small</option>
+																				<option value="l">L</option>
+																				<option value="xl">Xl</option>
+																				<option value="xxl">XXL</option>
+																			</select>
+																			
+																			<label for="stock">Cantidad</label>
+																			<input type="number" id="stock" name="stock">
+
+																			<label for="color-product">Color:</label>
+																			<select id="color-product" name="color-product">
+																				<option value="red">red</option>
+																				<option value="blue">blue</option>
+																				<option value="green">green</option>
+																				<option value="black">black</option>
+																			</select>
+																			<label for="discount">Discount Code:</label>
+																			<input type="text" id="discount" name="discount"><br>
+
+																			<input onClick="sendToCart()"  class="button-add-to-cart" type="submit" value="Add to Cart">
+																		</form>
+
+																	</div>
+																</div>
+
+									</div>
+									
+								<div>
+									<div class="container_galery_image">
+										<img class="galery_image" src="./assets/images/showcase-6.png" class="img-fluid" alt="">
+									</div>
+									
+										<h4>Apple iPad</h4>
+										<p class="item-price"><strike>$400.00</strike> <span>$369.00</span></p>
+										
+																								<!-- Trigger/Open The Modal -->
+															<button id="myBtn">Open Modal</button>
+
+															<!-- The Modal -->
+															<div id="myModal" class="modal-1">
+
+																<!-- Modal content -->
+																<div class="modal-content-1">
+
+
+																	<p class="close">&times;</p>
+																	<i class="c-grey fa-brands fa-apple fa-4x"></i>
+																	
+
+																	<form  class="modal-form">
+																		<label for="product-1">Product</label>
+																		<select id="product-1" name="product-1 value="product-1">
+																		<option value="product-1">Aple-watch-1</option>
+																		</select>
+
+																		<label for="product-1">Price</label>
+																		<select type="number" id="price-product-1" name="price-product-1 value="price-product-1">
+																		<option type="number" value="200">200</option>
+																		</select>
+
+																		<label for="size">Size</label>
+																		<select id="size" name="size">
+																			<option value="small">Small</option>
+																			<option value="l">L</option>
+																			<option value="xl">Xl</option>
+																			<option value="xxl">XXL</option>
+																		</select>
+																		
+																		<label for="stock">Cantidad</label>
+																		<input type="number" id="stock" name="stock">
+
+																		<label for="color-product">Color:</label>
+																		<select id="color-product" name="color-product">
+																			<option value="red">red</option>
+																			<option value="blue">blue</option>
+																			<option value="green">green</option>
+																			<option value="black">black</option>
+																		</select>
+																		<label for="discount">Discount Code:</label>
+																		<input type="text" id="discount" name="discount"><br>
+
+																		<input onClick="sendToCart()"  class="button-add-to-cart" type="submit" value="Add to Cart">
+																	</form>
+
+																</div>
+															</div>
+
+								</div>
+							</div>
+					</div>
+					<div class="galery">
+		
+						<div class="container_galery">
+							
+							<div class="card_watch">
+									<div class="container_galery_image">
+										<img class="galery_image" src="./assets/images/showcase-7.png" class="img-fluid" alt="">
+									</div>
+									
+										<h4>Apple iPad</h4>
+										<p class="item-price"><strike>$400.00</strike> <span>$369.00</span></p>
+										
+																								<!-- Trigger/Open The Modal -->
+															<button id="myBtn">Open Modal</button>
+
+															<!-- The Modal -->
+															<div id="myModal" class="modal-1">
+
+																<!-- Modal content -->
+																<div class="modal-content-1">
+
+
+																	<p class="close">&times;</p>
+																	<i class="c-grey fa-brands fa-apple fa-4x"></i>
+																	
+
+																	<form  class="modal-form">
+																		<label for="product-1">Product</label>
+																		<select id="product-1" name="product-1 value="product-1">
+																		<option value="product-1">Aple-watch-1</option>
+																		</select>
+
+																		<label for="product-1">Price</label>
+																		<select type="number" id="price-product-1" name="price-product-1 value="price-product-1">
+																		<option type="number" value="200">200</option>
+																		</select>
+
+																		<label for="size">Size</label>
+																		<select id="size" name="size">
+																			<option value="small">Small</option>
+																			<option value="l">L</option>
+																			<option value="xl">Xl</option>
+																			<option value="xxl">XXL</option>
+																		</select>
+																		
+																		<label for="stock">Cantidad</label>
+																		<input type="number" id="stock" name="stock">
+
+																		<label for="color-product">Color:</label>
+																		<select id="color-product" name="color-product">
+																			<option value="red">red</option>
+																			<option value="blue">blue</option>
+																			<option value="green">green</option>
+																			<option value="black">black</option>
+																		</select>
+																		<label for="discount">Discount Code:</label>
+																		<input type="text" id="discount" name="discount"><br>
+
+																		<input onClick="sendToCart()"  class="button-add-to-cart" type="submit" value="Add to Cart">
+																	</form>
+
+																</div>
+															</div>
+
+								</div>
+								
+							<div>
+								<div class="container_galery_image">
+									<img class="galery_image" src="./assets/images/showcase-8.png" class="img-fluid" alt="">
+								</div>
+								
 									<h4>Apple iPad</h4>
 									<p class="item-price"><strike>$400.00</strike> <span>$369.00</span></p>
-									<div class="star-rating">
-										<ul class="list-inline">
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
-										</ul>
-									</div>
+									
 																							<!-- Trigger/Open The Modal -->
 														<button id="myBtn">Open Modal</button>
 
@@ -217,188 +519,143 @@
 																	<input onClick="sendToCart()"  class="button-add-to-cart" type="submit" value="Add to Cart">
 																</form>
 
+															</div>
+														</div>
 
+							</div>
+						</div>
+						
+						<div class="container_galery">
+							
+							<div class="card_watch">
+									<div class="container_galery_image">
+										<img class="galery_image" src="./assets/images/watch-2.png" class="img-fluid" alt="">
+									</div>
+									
+										<h4>Apple iPad</h4>
+										<p class="item-price"><strike>$400.00</strike> <span>$369.00</span></p>
+										
+																								<!-- Trigger/Open The Modal -->
+															<button id="myBtn">Open Modal</button>
+
+															<!-- The Modal -->
+															<div id="myModal" class="modal-1">
+
+																<!-- Modal content -->
+																<div class="modal-content-1">
+
+
+																	<p class="close">&times;</p>
+																	<i class="c-grey fa-brands fa-apple fa-4x"></i>
+																	
+
+																	<form  class="modal-form">
+																		<label for="product-1">Product</label>
+																		<select id="product-1" name="product-1 value="product-1">
+																		<option value="product-1">Aple-watch-1</option>
+																		</select>
+
+																		<label for="product-1">Price</label>
+																		<select type="number" id="price-product-1" name="price-product-1 value="price-product-1">
+																		<option type="number" value="200">200</option>
+																		</select>
+
+																		<label for="size">Size</label>
+																		<select id="size" name="size">
+																			<option value="small">Small</option>
+																			<option value="l">L</option>
+																			<option value="xl">Xl</option>
+																			<option value="xxl">XXL</option>
+																		</select>
+																		
+																		<label for="stock">Cantidad</label>
+																		<input type="number" id="stock" name="stock">
+
+																		<label for="color-product">Color:</label>
+																		<select id="color-product" name="color-product">
+																			<option value="red">red</option>
+																			<option value="blue">blue</option>
+																			<option value="green">green</option>
+																			<option value="black">black</option>
+																		</select>
+																		<label for="discount">Discount Code:</label>
+																		<input type="text" id="discount" name="discount"><br>
+
+																		<input onClick="sendToCart()"  class="button-add-to-cart" type="submit" value="Add to Cart">
+																	</form>
+
+																</div>
 															</div>
 
+								</div>
+								
+							<div>
+								<div class="container_galery_image">
+									<img class="galery_image" src="./assets/images/watch.png" class="img-fluid" alt="">
+								</div>
+								
+									<h4>Apple iPad</h4>
+									<p class="item-price"><strike>$400.00</strike> <span>$369.00</span></p>
+									
+																							<!-- Trigger/Open The Modal -->
+														<button id="myBtn">Open Modal</button>
+
+														<!-- The Modal -->
+														<div id="myModal" class="modal-1">
+
+															<!-- Modal content -->
+															<div class="modal-content-1">
+
+
+																<p class="close">&times;</p>
+																<i class="c-grey fa-brands fa-apple fa-4x"></i>
+																
+
+																<form  class="modal-form">
+																	<label for="product-1">Product</label>
+																	<select id="product-1" name="product-1 value="product-1">
+																	<option value="product-1">Aple-watch-1</option>
+																	</select>
+
+																	<label for="product-1">Price</label>
+																	<select type="number" id="price-product-1" name="price-product-1 value="price-product-1">
+																	<option type="number" value="200">200</option>
+																	</select>
+
+																	<label for="size">Size</label>
+																	<select id="size" name="size">
+																		<option value="small">Small</option>
+																		<option value="l">L</option>
+																		<option value="xl">Xl</option>
+																		<option value="xxl">XXL</option>
+																	</select>
+																	
+																	<label for="stock">Cantidad</label>
+																	<input type="number" id="stock" name="stock">
+
+																	<label for="color-product">Color:</label>
+																	<select id="color-product" name="color-product">
+																		<option value="red">red</option>
+																		<option value="blue">blue</option>
+																		<option value="green">green</option>
+																		<option value="black">black</option>
+																	</select>
+																	<label for="discount">Discount Code:</label>
+																	<input type="text" id="discount" name="discount"><br>
+
+																	<input onClick="sendToCart()"  class="button-add-to-cart" type="submit" value="Add to Cart">
+																</form>
+
+															</div>
 														</div>
-									
-						
 
-									
-									
-
-									
-								</div>						
 							</div>
 						</div>
-						<div class="col-sm-3">
-							<div class="thumb-wrapper">
-								<div class="img-box">
-									<img src="./assets/images/showcase-4.png" class="img-fluid" alt="">
-								</div>
-								<div class="thumb-content">
-									<h4>Sony Headphone</h4>
-									<p class="item-price"><strike>$25.00</strike> <span>$23.99</span></p>
-									<div class="star-rating">
-										<ul class="list-inline">
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
-										</ul>
-									</div>
-									<a href="#" class="btn btn-primary">Add to Cart</a>
-								</div>						
-							</div>
-						</div>		
-						<div class="col-sm-3">
-							<div class="thumb-wrapper">
-								<div class="img-box">
-									<img src="./assets/images/showcase-5.png" class="img-fluid" alt="">
-								</div>
-								<div class="thumb-content">
-									<h4>Macbook Air</h4>
-									<p class="item-price"><strike>$899.00</strike> <span>$649.00</span></p>
-									<div class="star-rating">
-										<ul class="list-inline">
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
-										</ul>
-									</div>
-									<a href="#" class="btn btn-primary">Add to Cart</a>
-								</div>						
-							</div>
-						</div>								
-						<div class="col-sm-3">
-							<div class="thumb-wrapper">
-								<div class="img-box">
-									<img src="./assets/images/showcase-6.png" class="img-fluid" alt="">
-								</div>
-								<div class="thumb-content">
-									<h4>Nikon DSLR</h4>
-									<p class="item-price"><strike>$315.00</strike> <span>$250.00</span></p>
-									<div class="star-rating">
-										<ul class="list-inline">
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
-										</ul>
-									</div>
-									<a href="#" class="btn btn-primary">Add to Cart</a>
-								</div>						
-							</div>
-						</div>
-					</div>
 				</div>
-				<div class="carousel-item">
-					<div class="row">
-						<div class="col-sm-3">
-							<div class="thumb-wrapper">
-								<div class="img-box">
-									<img src="./assets/images/showcase-7.png" class="img-fluid" alt="">
-								</div>
-								<div class="thumb-content">
-									<h4>Sony Play Station</h4>
-									<p class="item-price"><strike>$289.00</strike> <span>$269.00</span></p>
-									<div class="star-rating">
-										<ul class="list-inline">
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
-										</ul>
-									</div>
-									<a href="#" class="btn btn-primary">Add to Cart</a>
-								</div>						
-							</div>
-						</div>
-						<div class="col-sm-3">
-							<div class="thumb-wrapper">
-								<div class="img-box">
-									<img src="./assets/images/showcase-8.png" class="img-fluid" alt="">
-								</div>
-								<div class="thumb-content">
-									<h4>Macbook Pro</h4>
-									<p class="item-price"><strike>$1099.00</strike> <span>$869.00</span></p>
-									<div class="star-rating">
-										<ul class="list-inline">
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
-										</ul>
-									</div>
-									<a href="#" class="btn btn-primary">Add to Cart</a>
-								</div>						
-							</div>
-						</div>
-            <div class="col-sm-3">
-							<div class="thumb-wrapper">
-								<div class="img-box">
-									<img src="./assets/images/showcase-6.png" class="img-fluid" alt="">
-								</div>
-								<div class="thumb-content">
-									<h4>Macbook Pro</h4>
-									<p class="item-price"><strike>$1099.00</strike> <span>$869.00</span></p>
-									<div class="star-rating">
-										<ul class="list-inline">
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
-										</ul>
-									</div>
-									<a href="#" class="btn btn-primary">Add to Cart</a>
-								</div>						
-							</div>
-						</div>
-            <div class="col-sm-3">
-							<div class="thumb-wrapper">
-								<div class="img-box">
-									<img src="./assets/images/showcase-3.png" class="img-fluid" alt="">
-								</div>
-								<div class="thumb-content">
-									<h4>Macbook Pro</h4>
-									<p class="item-price"><strike>$1099.00</strike> <span>$869.00</span></p>
-									<div class="star-rating">
-										<ul class="list-inline">
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star"></i></li>
-											<li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
-										</ul>
-									</div>
-									<a href="#" class="btn btn-primary">Add to Cart</a>
-								</div>						
-							</div>
-						</div>
-
-						
+									
+										
 											
-					</div>
-				</div>
-			</div>
-			<!-- Carousel controls -->
-			<a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
-				<i class="fa fa-angle-left"></i>
-			</a>
-			<a class="carousel-control-next" href="#myCarousel" data-slide="next">
-				<i class="fa fa-angle-right"></i>
-			</a>
-		</div>
-		</div>
-	</div>
-</div>
+						
 
 
 
@@ -428,26 +685,28 @@
 			<div class="quotes_personal_profile">
 				<img src="./assets/images/avater.png" alt="no-foto">
 			</div>
-			<h5>Name Surname</h5>
-			<p>CEO, apple Store</p>
+			<h5>John Martin</h5>
+			<p>CEO, SliceTasks App</p>
 		</div>
 		<div class="container_quotes_personal">
 			<i class="fa-solid fa-quote-left fa-4x yellow-color"></i>
-			<p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents.</p>
+			<p>The Apple Watch 5 isn't Apple's latest wearable but it's almost as good as the Apple Watch 6, and like that wearable it comes with a handy always-on display. 
+
+				That will allow you to see all of your key stats without having to turn on your watch's screen. You've got the choice of either a 40mm or 44mm case for this watch, and it comes with a wide variety of fitness features.</p>
 			<div class="quotes_personal_profile">
-				<img src="./assets/images/avater.png" alt="no-foto">
+				<img src="./assets/images/avatar4.jpg" alt="no-foto">
 			</div>
-			<h5>Name Surname</h5>
-			<p>CEO, apple Store</p>
+			<h5>Mark Simpson</h5>
+			<p>CEO, Marketing Vanilla</p>
 		</div>
 		<div class="container_quotes_personal">
 			<i class="fa-solid fa-quote-left fa-4x yellow-color"></i>
-			<p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents.</p>
+			<p>The most exciting tech here is the fact that there's an ECG feature within the heart rate tracker. It can test your heart to see if you're at a high risk of atrial fibrillation, which will allow you to seek help earlier if your health is in danger. This is found on the Apple Watch 5 and up too, but not older models.</p>
 			<div class="quotes_personal_profile">
-				<img src="./assets/images/avater.png" alt="no-foto">
+				<img src="./assets/images/avatar5.jpg" alt="no-foto">
 			</div>
-			<h5>Name Surname</h5>
-			<p>CEO, apple Store</p>
+			<h5>Jesse Li Kim</h5>
+			<p>CEO, Amazon Latin America</p>
 		</div>
 
 	</div>
@@ -463,7 +722,14 @@
 			<a href="">Newsletter</a>
 		</div>
 		<p>Copyright © Apple Store Watch Market</p>
+		<div class="d-flex justify-content-center align-items-center">
+			<a href="instagram.com"><i class="c-black mr-10 fa-brands fa-instagram"></i></a>
+			<a href="twitter.com"><i class="c-black mr-10 fa-brands fa-twitter"></i></a>
+			<a href="facebook.com"></a><i class="c-black mr-10 fa-brands fa-facebook"></i></a>
+			<a href="apple.com"></a><i class="c-black mr-10 fa-brands fa-apple"></i></a>
+		</div>
 	</div>
+
 </footer>
 
 

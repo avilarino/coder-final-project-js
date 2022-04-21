@@ -59,23 +59,36 @@ const sendToCart = () => {
 
 }
 
+const productCart = document.querySelector("#new-product")
+
+
+
+
+
 
 
 
 // navbar ---------------------------------------
 
 const navbar = document.getElementById("navbar");
+const logo = document.querySelector(".logo_app")
+
 
 window.onscroll = function(){
   const top = window.scrollY;
 
   if(top >= 100){
     navbar.classList.add("c-grey");
+    logo.classList.add("c-white")
 
-    
+
   } else {
     navbar.classList.remove("c-grey");
-    
+    logo.classList.remove("c-white");
   }
 }
+
+
+
+
 

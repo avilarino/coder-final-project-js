@@ -148,6 +148,10 @@ section {
 	margin-right: 10px
 }
 
+.logo_app {
+	color: white
+}
+
 .c-grey {
 	color: #cccccc;
 }
@@ -156,10 +160,16 @@ section {
 	color: #1d1d1f;
 }
 
-.logo-apple.c-grey {
-	color: #cccccc;
+.c-white {
+	color: #cccccc
 }
 
+.cart-box {
+	margin-top: 50px;
+	border: 1px solid black;
+	width: 100%;
+	height: 500px
+}
 
 
 /* nav -----------------------------------------*/

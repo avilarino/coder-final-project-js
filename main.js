@@ -1,5 +1,4 @@
 
-
 // entregable clase 8 documentById - Agustin Vilariño
 
 class Usuario  {
@@ -44,22 +43,37 @@ const sendToCart = () => {
   let stockWatch = document.getElementById("stock").value
   let colorWatch = document.getElementById("color-product").value
   let discount = document.getElementById("discount").value
+  
+  let errorParagraph = document.getElementById("discount-text")
+
+  const productCart = document.querySelector("#new-product")
+  const totalPrice = document.getElementById("total-price")
+
 
     if (discount != "CODER"){
-      console.log(`el código de descuento es incorrecto`)
+      errorParagraph.append(" --- el codigo es falso ! ---")
+      errorParagraph.style.color = "red"
       console.log(`el total a pagar es ${precioWatch * stockWatch}`)
     } else  {
       let total = (precioWatch - ((precioWatch*10)/100))* stockWatch
-      console.log(`el precio a pagar con descuento es ${total}`)
+      console.log(total)
     }
 
   let Envio1 = new Compra(nombreWatch, precioWatch, sizeWatch,colorWatch,stockWatch)
   carrito.push(Envio1)
   console.log(carrito)
 
+  productCart.append(`${nombreWatch}`)
+
 }
 
-const productCart = document.querySelector("#new-product")
+
+
+
+
+
+
+
 
 
 

@@ -40,6 +40,7 @@
 	<div class="cart-box">
 		<h2>CART DEMO</h2>
 		<p id="new-product"></p>
+		<p id="total-price"></p>
 
 
 	</div>
@@ -202,7 +203,7 @@
 																			</select>
 																			
 																			<label for="stock">Cantidad</label>
-																			<input type="number" id="stock" name="stock">
+																			<input type="number" id="stock" value="1" name="stock" required>
 
 																			<label for="color-product">Color:</label>
 																			<select id="color-product" name="color-product">
@@ -213,6 +214,7 @@
 																			</select>
 																			<label for="discount">Discount Code:</label>
 																			<input type="text" id="discount" name="discount"><br>
+																			<p id="discount-text"></p>
 
 																			<input onClick="sendToCart()"  class="button-add-to-cart" type="submit" value="Add to Cart">
 																		</form>

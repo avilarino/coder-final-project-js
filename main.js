@@ -15,9 +15,12 @@ const usuariosMails = (correo) => {
   let expReg = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/
   let valido = expReg.test(correo)
 
+
+
   if(valido == true) {
     newsLetter.push(correo)
-    localStorage.setItem("ingreso mail", JSON.stringify(correo))
+    localStorage.setItem("ingreso", JSON.stringify(correo))
+    
     
     swal("Registrado", "You`ll get your email the next month", "success")
   } else {
@@ -28,8 +31,11 @@ const usuariosMails = (correo) => {
 
 }
 
+const user = JSON.parse(localStorage.getItem("ingreso"))
+console.log(user)
 
-
+const userMail = document.getElementById("user-mail")
+userMail.append(user)
 
 /// carrito !!!!
 

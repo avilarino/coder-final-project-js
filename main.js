@@ -2,20 +2,36 @@
 // entregable clase 8 documentById - Agustin Vilariño
 
 class Usuario  {
-  constructor(mail){
-    this.mail = mail;
+  constructor(correo){
+    this.correo = correo;
   }
 }
 
 const newsLetter = []
 
-const usuariosMails = () => {
-  let nombreMail = document.getElementById("email").value
-  let usuario1 = new Usuario(nombreMail)
-  newsLetter.push(usuario1);
-  console.log(newsLetter)
-  
+
+const usuariosMails = (correo) => {
+
+  let expReg = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/
+  let valido = expReg.test(correo)
+
+  if(valido == true) {
+    newsLetter.push(correo)
+    localStorage.setItem("ingreso mail", JSON.stringify(correo))
+    
+    swal("Registrado", "You`ll get your email the next month", "success")
+  } else {
+    swal("Error", "Try again please !", "error"
+    
+    )
+  }
+
 }
+
+
+
+
+/// carrito !!!!
 
 
 class Compra   {
@@ -44,40 +60,35 @@ const sendToCart = () => {
   let colorWatch = document.getElementById("color-product").value
   let discount = document.getElementById("discount").value
   
-  let errorParagraph = document.getElementById("discount-text")
 
-  const productCart = document.querySelector("#new-product")
-  const totalPrice = document.getElementById("total-price")
+  const productCart = document.getElementById("new-product")
 
 
-    if (discount != "CODER"){
-      errorParagraph.append(" --- el codigo es falso ! ---")
-      errorParagraph.style.color = "red"
-      console.log(`el total a pagar es ${precioWatch * stockWatch}`)
-    } else  {
-      let total = (precioWatch - ((precioWatch*10)/100))* stockWatch
+  let total = 0
+
+
+    if (discount != "CODER" ){ 
+    
+      total = (`precio: ${precioWatch * stockWatch}`)
+      productCart.append(`${nombreWatch} - $${total}`)
       console.log(total)
-    }
+
+    } else {
+      let valor = (precioWatch - ((precioWatch*10)/100))* stockWatch
+      productCart.append(`${nombreWatch} - precio: $${valor}`)
+      console.log(valor)
+
+    } 
+
 
   let Envio1 = new Compra(nombreWatch, precioWatch, sizeWatch,colorWatch,stockWatch)
   carrito.push(Envio1)
   console.log(carrito)
 
-  productCart.append(`${nombreWatch}`)
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
+  
 
 
 
@@ -103,6 +114,24 @@ window.onscroll = function(){
 }
 
 
+// buscador !!!
 
+document.addEventListener("keyup", e=>{
+
+  if (e.target.matches("#search")){
+
+      if (e.key ==="Escape")e.target.value = ""
+
+      document.querySelectorAll(".articulo").forEach(local =>{
+
+          local.textContent.toLowerCase().includes(e.target.value.toLowerCase())
+            ?local.classList.remove("filtro")
+            :local.classList.add("filtro")
+      })
+
+  }
+
+
+})
 
 

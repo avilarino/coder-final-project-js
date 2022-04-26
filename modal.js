@@ -1,4 +1,6 @@
 
+
+
 // Get the modal
 let modal = document.querySelector(".myModal");
 let btn = document.querySelectorAll(".myBtn");

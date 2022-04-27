@@ -56,6 +56,9 @@
 	margin-right: 20px;
 }
 
+.logo_cart {
+	color: black
+}
 
 
 /* The Modal (background) */
@@ -129,8 +132,8 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-color: green;
-	box-shadow: 0 15px 40px green;
+	background-color: #28a745;
+	box-shadow: 0 15px 40px #28a745;
 	text-decoration: none;
 	margin-bottom: 30px;
 	text-decoration: none;
@@ -241,11 +244,15 @@ section {
 }
 
 .logo_app {
-	color: white
+	color: black
 }
 
 .c-grey {
 	color: #cccccc;
+}
+
+.bg-black {
+	background-color: #1d1d1f;
 }
 
 .c-black {
@@ -254,6 +261,10 @@ section {
 
 .c-white {
 	color: white
+}
+
+.c-yellow {
+	color: #f9a743;
 }
 
 .cart-box {
@@ -280,7 +291,7 @@ nav {
 	top: 0;
 	padding: 0 5%;
 	height: 50px;
-  background-color: #f9a743;
+  background-color: #888
 }
 nav .logo {
 	float: left;
@@ -349,7 +360,7 @@ nav .icon-burger .line {
 	font-size: 12px;
 	color: white;
 	margin-left: 20px;
-	margin-top: 10px
+	margin-top: 15px
 }
 
 

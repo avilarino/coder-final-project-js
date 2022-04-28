@@ -1,3 +1,6 @@
+
+
+
 #listaArticulos{
 	font-size: 30px;
 	list-style: none;
@@ -30,11 +33,23 @@
 }
 
 
+/* cart */
 
+.triangle-up {
+	width: 0;
+	height: 0;
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-bottom: 12px solid #888;
+	display: none;
+	position: absolute;
+	left: 5px;
+	bottom:-14px
+}
 
 .dropdown-container {
 	position: relative;
-	margin-top: 6px
+	margin-top: 15px
 }
 
 .dropdown-container .cart-box {
@@ -52,12 +67,21 @@
 	max-height: 400px;
 }
 
+.dropdown-container:hover .triangle-up {
+	display: block;
+}
+
+
+
+
 .logo_app {
 	margin-right: 20px;
 }
 
 .logo_cart {
-	color: black
+	color: black;
+	position: relative;
+	bottom: 3px
 }
 
 
@@ -273,11 +297,16 @@ section {
 	height: 500px;
 	background-color: #888;
 	border-radius: 5px;
-	border: 1px solid black
+	border: 1px solid black;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center
 }
 
 #new-product {
-	margin-right: 70px
+	font-size: 12px;
+	color: white
 }
 
 

@@ -24,21 +24,14 @@
     <input id="nav-toggle" type="checkbox">
     <div class="logo">
 			<i class= "c-grey logo_app fa-brands fa-apple"> </i>
-			<div class="dropdown-container">
-				<span><i class="c-grey logo_cart fa-solid fa-cart-shopping fa-xs"></i></span>
-
-				<div class="triangle-up"></div>
-					<div class="cart-box">
-						
-						<p id="new-product"></p><br/>
-						<button class="button_buy_now" type="submit">BUY NOW !</button>
-						<button onClick="removeCart()" class="button_buy_now" type="submit">Remove Cart !</button>
-					</div>
-			</div>
+			<button id="boton-carrito">
+				<i class="c-grey fas fa-shopping-cart"></i>
+				<span id="contadorCarrito">0</span>
+			</button>
+		
 				<p id="user-mail"></p>
 		</div>
     <ul class="links">
-      <li><a href="#home"></a></li>
       <li><a href="#work">shop</a></li>
       <li><a href="#work">stores</a></li>
       <li><a href="#projects">contact</a></li>
@@ -49,6 +42,41 @@
       <div class="line"></div>
     </label>
   </nav>
+
+	<header>
+	
+		
+</header>
+
+<select id="filtroTalle">
+		<option value="all">Todos</option>
+		<option value="L">Large</option>
+		<option value="M">Medium</option>
+		<option value="S">Small</option>
+</select>
+
+
+<main id="container_shop">
+
+</main>
+
+<div class="modal-contenedor">
+		<div class="modal-carrito">
+				<h3>Carrito</h3>
+				<button id="carritoCerrar"><i class="fas fa-times-circle"></i></button>
+				<div id="container_cart">
+						<!-- <div class="productoEnCarrito">
+								<p>Buzo 1</p>
+								<p>Precio: $1200</p>
+								<button class="boton-eliminar"><i class="fas fa-trash-alt"></i></button>
+						</div> -->
+				</div>
+				<p class="precioProducto">Precio total: $<span id="precioTotal">0</span></p>
+				<button id="delete-all-cart" class="boton-agregar">Vaciar carrito</button>
+		</div>
+</div>
+
+
 
 	<!-- section- one -->
 	<section>
@@ -124,6 +152,7 @@
 		</div>
 	</section>
 
+	<!-- section-four -->
 <section>
   <h1 class="title-apple-h1">Why Apple Watch ?</h1>
   <div class="container_section_one">
@@ -136,7 +165,6 @@
       <a class="apple_button" href="/">Buy Now With $199</a>
     </div>
   </div>
-
 
   <div class="container_section_one">
     <div class="container_image">
@@ -151,523 +179,17 @@
 </section>
 
 
-<!--galery-->
 
 
 
-	
-			<h1 class="title-apple-h1">Looking for your favorite Apple Watch</h1>
-		
-				<div class="galery">
-		
-							<div class="container_galery">
-								
-								<div class="card_watch">
-										<div class="container_galery_image">
-											<img class="galery_image" src="./assets/images/showcase-3.png" class="img-fluid" alt="">
-										</div>
-										
-											<h4>Apple iPad</h4>
-											<p class="item-price"><strike>$400.00</strike> <span>$369.00</span></p>
-											
-																									<!-- Trigger/Open The Modal -->
-																<button class="myBtn button_open_modal">Add to Cart</button>
 
-																<!-- The Modal -->
-																<div class="myModal modal-1">
 
-																	<!-- Modal content -->
-																	<div class="modal-content-1">
 
+</section>
 
-																		<p class="close">&times;</p>
-																		<i class="c-grey fa-brands fa-apple fa-4x"></i>
-																		
 
-																		<form  class="modal-form">
-																			<label for="product-1">Product</label>
-																			<select id="product-1" name="product-1 value="product-1">
-																			<option value="product-1">Aple-watch-1</option>
-																			</select>
 
-																			<label for="product-1">Price</label>
-																			<select type="number" id="price-product-1" name="price-product-1 value="price-product-1">
-																			<option type="number" value="200">200</option>
-																			</select>
 
-																			<label for="size">Size</label>
-																			<select id="size" name="size">
-																				<option value="small">Small</option>
-																				<option value="l">L</option>
-																				<option value="xl">Xl</option>
-																				<option value="xxl">XXL</option>
-																			</select>
-																			
-																			<label for="stock">Cantidad</label>
-																			<input type="number" id="stock" value="1" name="stock" required>
-
-																			<label for="color-product">Color:</label>
-																			<select id="color-product" name="color-product">
-																				<option value="red">red</option>
-																				<option value="blue">blue</option>
-																				<option value="green">green</option>
-																				<option value="black">black</option>
-																			</select>
-																			<label for="discount">Discount Code:</label>
-																			<input type="text" id="discount" name="discount"><br>
-																			<p id="false-code"></p>
-																			<p id="true-code"></p>
-
-																			
-																			<input onClick="sendToCart()"  class="button-add-to-cart" type="submit" value="Add to Cart">
-																			<a href="" class="button-go-to-cart">Go to cart</a>
-																		</form>
-
-																	</div>
-																</div>
-
-									</div>
-									
-									
-								<div>
-									<div class="container_galery_image">
-										<img class="galery_image" src="./assets/images/showcase-4.png" class="img-fluid" alt="">
-									</div>
-									
-										<h4>Apple iPad</h4>
-										<p class="item-price"><strike>$400.00</strike> <span>$369.00</span></p>
-										
-																								<!-- Trigger/Open The Modal -->
-															<button class="myBtn button_open_modal">Add to Cart</button>
-
-															<!-- The Modal -->
-															<div class="myModal modal-1">
-
-																<!-- Modal content -->
-																<div class="modal-content-1">
-
-
-																	<p class="close">&times;</p>
-																	<i class="c-grey fa-brands fa-apple fa-4x"></i>
-																	
-
-																	<form  class="modal-form">
-																		<label for="product-1">Product</label>
-																		<select id="product-1" name="product-1 value="product-1">
-																		<option value="product-1">Aple-watch-1</option>
-																		</select>
-
-																		<label for="product-1">Price</label>
-																		<select type="number" id="price-product-1" name="price-product-1 value="price-product-1">
-																		<option type="number" value="200">200</option>
-																		</select>
-
-																		<label for="size">Size</label>
-																		<select id="size" name="size">
-																			<option value="small">Small</option>
-																			<option value="l">L</option>
-																			<option value="xl">Xl</option>
-																			<option value="xxl">XXL</option>
-																		</select>
-																		
-																		<label for="stock">Cantidad</label>
-																		<input type="number" id="stock" name="stock">
-
-																		<label for="color-product">Color:</label>
-																		<select id="color-product" name="color-product">
-																			<option value="red">red</option>
-																			<option value="blue">blue</option>
-																			<option value="green">green</option>
-																			<option value="black">black</option>
-																		</select>
-																		<label for="discount">Discount Code:</label>
-																		<input type="text" id="discount" name="discount"><br>
-
-																		<input onClick="sendToCart()"  class="button-add-to-cart" type="submit" value="Add to Cart">
-																	</form>
-
-																</div>
-															</div>
-
-								</div>
-							</div>
-							
-							<div class="container_galery">
-								
-								<div class="card_watch">
-										<div class="container_galery_image">
-											<img class="galery_image" src="./assets/images/showcase-5.png" class="img-fluid" alt="">
-										</div>
-										
-											<h4>Apple iPad</h4>
-											<p class="item-price"><strike>$400.00</strike> <span>$369.00</span></p>
-											
-																									<!-- Trigger/Open The Modal -->
-																<button class="myBtn button_open_modal">Add to Cart</button>
-
-																<!-- The Modal -->
-																<div class="myModal modal-1">
-
-																	<!-- Modal content -->
-																	<div class="modal-content-1">
-
-
-																		<p class="close">&times;</p>
-																		<i class="c-grey fa-brands fa-apple fa-4x"></i>
-																		
-
-																		<form  class="modal-form">
-																			<label for="product-1">Product</label>
-																			<select id="product-1" name="product-1 value="product-1">
-																			<option value="product-1">Aple-watch-1</option>
-																			</select>
-
-																			<label for="product-1">Price</label>
-																			<select type="number" id="price-product-1" name="price-product-1 value="price-product-1">
-																			<option type="number" value="200">200</option>
-																			</select>
-
-																			<label for="size">Size</label>
-																			<select id="size" name="size">
-																				<option value="small">Small</option>
-																				<option value="l">L</option>
-																				<option value="xl">Xl</option>
-																				<option value="xxl">XXL</option>
-																			</select>
-																			
-																			<label for="stock">Cantidad</label>
-																			<input type="number" id="stock" name="stock">
-
-																			<label for="color-product">Color:</label>
-																			<select id="color-product" name="color-product">
-																				<option value="red">red</option>
-																				<option value="blue">blue</option>
-																				<option value="green">green</option>
-																				<option value="black">black</option>
-																			</select>
-																			<label for="discount">Discount Code:</label>
-																			<input type="text" id="discount" name="discount"><br>
-
-																			<input onClick="sendToCart()"  class="button-add-to-cart" type="submit" value="Add to Cart">
-																		</form>
-
-																	</div>
-																</div>
-
-									</div>
-									
-								<div>
-									<div class="container_galery_image">
-										<img class="galery_image" src="./assets/images/showcase-6.png" class="img-fluid" alt="">
-									</div>
-									
-										<h4>Apple iPad</h4>
-										<p class="item-price"><strike>$400.00</strike> <span>$369.00</span></p>
-										
-																								<!-- Trigger/Open The Modal -->
-															<button class="myBtn button_open_modal">Add to Cart</button>
-
-															<!-- The Modal -->
-															<div class="myModal modal-1">
-
-																<!-- Modal content -->
-																<div class="modal-content-1">
-
-
-																	<p class="close">&times;</p>
-																	<i class="c-grey fa-brands fa-apple fa-4x"></i>
-																	
-
-																	<form  class="modal-form">
-																		<label for="product-1">Product</label>
-																		<select id="product-1" name="product-1 value="product-1">
-																		<option value="product-1">Aple-watch-1</option>
-																		</select>
-
-																		<label for="product-1">Price</label>
-																		<select type="number" id="price-product-1" name="price-product-1 value="price-product-1">
-																		<option type="number" value="200">200</option>
-																		</select>
-
-																		<label for="size">Size</label>
-																		<select id="size" name="size">
-																			<option value="small">Small</option>
-																			<option value="l">L</option>
-																			<option value="xl">Xl</option>
-																			<option value="xxl">XXL</option>
-																		</select>
-																		
-																		<label for="stock">Cantidad</label>
-																		<input type="number" id="stock" name="stock">
-
-																		<label for="color-product">Color:</label>
-																		<select id="color-product" name="color-product">
-																			<option value="red">red</option>
-																			<option value="blue">blue</option>
-																			<option value="green">green</option>
-																			<option value="black">black</option>
-																		</select>
-																		<label for="discount">Discount Code:</label>
-																		<input type="text" id="discount" name="discount"><br>
-
-																		<input onClick="sendToCart()"  class="button-add-to-cart" type="submit" value="Add to Cart">
-																	</form>
-
-																</div>
-															</div>
-
-								</div>
-							</div>
-					</div>
-					<div class="galery">
-		
-						<div class="container_galery">
-							
-							<div class="card_watch">
-									<div class="container_galery_image">
-										<img class="galery_image" src="./assets/images/showcase-7.png" class="img-fluid" alt="">
-									</div>
-									
-										<h4>Apple iPad</h4>
-										<p class="item-price"><strike>$400.00</strike> <span>$369.00</span></p>
-										
-																								<!-- Trigger/Open The Modal -->
-															<button class="myBtn button_open_modal">Add to Cart</button>
-
-															<!-- The Modal -->
-															<div class="myModal modal-1">
-
-																<!-- Modal content -->
-																<div class="modal-content-1">
-
-
-																	<p class="close">&times;</p>
-																	<i class="c-grey fa-brands fa-apple fa-4x"></i>
-																	
-
-																	<form  class="modal-form">
-																		<label for="product-1">Product</label>
-																		<select id="product-1" name="product-1 value="product-1">
-																		<option value="product-1">Aple-watch-1</option>
-																		</select>
-
-																		<label for="product-1">Price</label>
-																		<select type="number" id="price-product-1" name="price-product-1 value="price-product-1">
-																		<option type="number" value="200">200</option>
-																		</select>
-
-																		<label for="size">Size</label>
-																		<select id="size" name="size">
-																			<option value="small">Small</option>
-																			<option value="l">L</option>
-																			<option value="xl">Xl</option>
-																			<option value="xxl">XXL</option>
-																		</select>
-																		
-																		<label for="stock">Cantidad</label>
-																		<input type="number" id="stock" name="stock">
-
-																		<label for="color-product">Color:</label>
-																		<select id="color-product" name="color-product">
-																			<option value="red">red</option>
-																			<option value="blue">blue</option>
-																			<option value="green">green</option>
-																			<option value="black">black</option>
-																		</select>
-																		<label for="discount">Discount Code:</label>
-																		<input type="text" id="discount" name="discount"><br>
-
-																		<input onClick="sendToCart()"  class="button-add-to-cart" type="submit" value="Add to Cart">
-																	</form>
-
-																</div>
-															</div>
-
-								</div>
-								
-							<div>
-								<div class="container_galery_image">
-									<img class="galery_image" src="./assets/images/showcase-8.png" class="img-fluid" alt="">
-								</div>
-								
-									<h4>Apple iPad</h4>
-									<p class="item-price"><strike>$400.00</strike> <span>$369.00</span></p>
-									
-																							<!-- Trigger/Open The Modal -->
-														<button class="myBtn button_open_modal">Add to Cart</button>
-
-														<!-- The Modal -->
-														<div class="myModal modal-1">
-
-															<!-- Modal content -->
-															<div class="modal-content-1">
-
-
-																<p class="close">&times;</p>
-																<i class="c-grey fa-brands fa-apple fa-4x"></i>
-																
-
-																<form  class="modal-form">
-																	<label for="product-1">Product</label>
-																	<select id="product-1" name="product-1 value="product-1">
-																	<option value="product-1">Aple-watch-1</option>
-																	</select>
-
-																	<label for="product-1">Price</label>
-																	<select type="number" id="price-product-1" name="price-product-1 value="price-product-1">
-																	<option type="number" value="200">200</option>
-																	</select>
-
-																	<label for="size">Size</label>
-																	<select id="size" name="size">
-																		<option value="small">Small</option>
-																		<option value="l">L</option>
-																		<option value="xl">Xl</option>
-																		<option value="xxl">XXL</option>
-																	</select>
-																	
-																	<label for="stock">Cantidad</label>
-																	<input type="number" id="stock" name="stock">
-
-																	<label for="color-product">Color:</label>
-																	<select id="color-product" name="color-product">
-																		<option value="red">red</option>
-																		<option value="blue">blue</option>
-																		<option value="green">green</option>
-																		<option value="black">black</option>
-																	</select>
-																	<label for="discount">Discount Code:</label>
-																	<input type="text" id="discount" name="discount"><br>
-
-																	<input onClick="sendToCart()"  class="button-add-to-cart" type="submit" value="Add to Cart">
-																</form>
-
-															</div>
-														</div>
-
-							</div>
-						</div>
-						
-						<div class="container_galery">
-							
-							<div class="card_watch">
-									<div class="container_galery_image">
-										<img class="galery_image" src="./assets/images/watch-2.png" class="img-fluid" alt="">
-									</div>
-									
-										<h4>Apple iPad</h4>
-										<p class="item-price"><strike>$400.00</strike> <span>$369.00</span></p>
-										
-																								<!-- Trigger/Open The Modal -->
-															<button class="myBtn button_open_modal">Add to Cart</button>
-
-															<!-- The Modal -->
-															<div class="myModal modal-1">
-
-																<!-- Modal content -->
-																<div class="modal-content-1">
-
-
-																	<p class="close">&times;</p>
-																	<i class="c-grey fa-brands fa-apple fa-4x"></i>
-																	
-
-																	<form  class="modal-form">
-																		<label for="product-1">Product</label>
-																		<select id="product-1" name="product-1 value="product-1">
-																		<option value="product-1">Aple-watch-1</option>
-																		</select>
-
-																		<label for="product-1">Price</label>
-																		<select type="number" id="price-product-1" name="price-product-1 value="price-product-1">
-																		<option type="number" value="200">200</option>
-																		</select>
-
-																		<label for="size">Size</label>
-																		<select id="size" name="size">
-																			<option value="small">Small</option>
-																			<option value="l">L</option>
-																			<option value="xl">Xl</option>
-																			<option value="xxl">XXL</option>
-																		</select>
-																		
-																		<label for="stock">Cantidad</label>
-																		<input type="number" id="stock" name="stock">
-
-																		<label for="color-product">Color:</label>
-																		<select id="color-product" name="color-product">
-																			<option value="red">red</option>
-																			<option value="blue">blue</option>
-																			<option value="green">green</option>
-																			<option value="black">black</option>
-																		</select>
-																		<label for="discount">Discount Code:</label>
-																		<input type="text" id="discount" name="discount"><br>
-
-																		<input onClick="sendToCart()"  class="button-add-to-cart" type="submit" value="Add to Cart">
-																	</form>
-
-																</div>
-															</div>
-
-								</div>
-								
-							<div>
-								<div class="container_galery_image">
-									<img class="galery_image" src="./assets/images/watch.png" class="img-fluid" alt="">
-								</div>
-								
-									<h4>Apple iPad</h4>
-									<p class="item-price"><strike>$400.00</strike> <span>$369.00</span></p>
-																							<!-- Trigger/Open The Modal -->
-														<button class="myBtn button_open_modal">Add to Cart</button>
-														<!-- The Modal -->
-														<div class="myModal modal-1">
-															<!-- Modal content -->
-															<div class="modal-content-1">
-																<p class="close">&times;</p>
-																<i class="c-grey fa-brands fa-apple fa-4x"></i>
-																
-
-																<form  class="modal-form">
-																	<label for="product-1">Product</label>
-																	<select id="product-1" name="product-1 value="product-1">
-																	<option value="product-1">Aple-watch-1</option>
-																	</select>
-
-																	<label for="product-1">Price</label>
-																	<select type="number" id="price-product-1" name="price-product-1 value="price-product-1">
-																	<option type="number" value="200">200</option>
-																	</select>
-
-																	<label for="size">Size</label>
-																	<select id="size" name="size">
-																		<option value="small">Small</option>
-																		<option value="l">L</option>
-																		<option value="xl">Xl</option>
-																		<option value="xxl">XXL</option>
-																	</select>
-																	
-																	<label for="stock">Cantidad</label>
-																	<input type="number" id="stock" name="stock">
-
-																	<label for="color-product">Color:</label>
-																	<select id="color-product" name="color-product">
-																		<option value="red">red</option>
-																		<option value="blue">blue</option>
-																		<option value="green">green</option>
-																		<option value="black">black</option>
-																	</select>
-																	<label for="discount">Discount Code:</label>
-																	<input type="text" id="discount" name="discount"><br>
-
-																	<input onClick="sendToCart()"  class="button-add-to-cart" type="submit" value="Add to Cart">
-																</form>
-															</div>
-														</div>
-							</div>
-						</div>
-				</div>
 
 <section>
 <div class="container_call_to_action">
@@ -686,6 +208,17 @@
 	</div>
 </div>
 </section>
+
+
+
+
+
+
+
+
+
+
+
 
 
 <section>
@@ -770,7 +303,9 @@
 
 <!-- personal folder scripts -->
 <script src="./js/main.js"></script>
+<script src="./js/cart.js"></script>
 <script src="./js/modal.js"></script>
+
 
 <!-- bootstrap -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

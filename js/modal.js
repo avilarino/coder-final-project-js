@@ -1,31 +1,21 @@
+const contenedorModal = document.getElementsByClassName('modal-contenedor')[0]
+const botonAbrir = document.getElementById('boton-carrito')
+const botonCerrar = document.getElementById('carritoCerrar')
+const modalCarrito = document.getElementsByClassName('modal-carrito')[0]
 
 
+botonAbrir.addEventListener('click', ()=>{
+    contenedorModal.classList.toggle('modal-active')
+})
+botonCerrar.addEventListener('click', ()=>{
+    contenedorModal.classList.toggle('modal-active')
+})
 
-// Get the modal
-let modal = document.querySelector(".myModal");
-let btn = document.querySelectorAll(".myBtn");
-let span = document.getElementsByClassName("close")[0];
+contenedorModal.addEventListener('click', (event) =>{
+    contenedorModal.classList.toggle('modal-active')
 
-// When the user clicks on the button, open the modal
-btn.forEach(boton => {
-    boton.addEventListener("click", () => {
-      modal.style.display = "block";
-    });
-  })
-
-
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-
-
-
-
-
+})
+modalCarrito.addEventListener('click', (event) => {
+    event.stopPropagation() //cuando clickeo sobre el modal se finaliza la propagacion del click a los elementos
+    //padre
+})

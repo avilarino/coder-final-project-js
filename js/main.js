@@ -23,9 +23,7 @@ const usuariosMails = (correo) => {
     
     swal("Registrado", "You`ll get your email the next month", "success")
   } else {
-    swal("Error", "Try again please !", "error"
-    
-    )
+    swal("Error", "Try again please !", "error")
   }
 
 }
@@ -35,6 +33,7 @@ console.log(user)
 
 const userMail = document.getElementById("user-mail")
 userMail.append(user)
+
 
 
 

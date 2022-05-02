@@ -156,7 +156,7 @@ const deleteFromCart = (prodId) => {
 
 const updateCart = () => {
 
-  containerCart.innerHTML = ""
+  containerCart.innerHTML = "" 
 
   carrito.forEach((product) => {
     const div = document.createElement('div')
@@ -183,7 +183,11 @@ const updateCart = () => {
 }
 
 const buyNow = () => {
+  if (carrito.length > 0){ 
   swal("Thank You", "your buy is going to your home", "success")
+  } else {
+    swal("Error", "The cart is empty!", "error")
+  }
 }
 
 

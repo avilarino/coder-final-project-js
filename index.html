@@ -5,20 +5,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/jpg" href="./assets/images/favi.png"/>
+	<!--stylesheets-->
+	<link rel="stylesheet" href="./assets/css/normalize.css">
 	<link rel="stylesheet" href="./assets/css/style.css">
+	<!--fontowesome-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-		
 	<!-- bootstrap -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-
-		<!-- sweet alert -->
+	<!-- sweet alert -->
 	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-	<title>Document</title>
+	<title>Apple shop store</title>
 </head>
 <body>
-
 	<!-- navbar -->
 	<nav id="navbar">
     <input id="nav-toggle" type="checkbox">
@@ -44,12 +44,12 @@
   </nav>
 
 	<section id="contact-sidebar">
-	<div class="contact">
-		<a href="instagram.com"><i class="c-alpine mr-10 fa-brands fa-instagram fa-2x"></i></a>
-		<a href="twitter.com"><i class="c-alpine  mr-10 fa-brands fa-twitter fa-2x"></i></a>
-		<a href="facebook.com"><i class="c-alpine  mr-10 fa-brands fa-facebook fa-2x"></i></a>
-		<a href="apple.com"><i class="c-alpine  mr-10 fa-brands fa-apple fa-2x"></i></a>
-	</div>
+		<div class="contact">
+			<a href="instagram.com"><i class="c-alpine mr-10 fa-brands fa-instagram fa-2x"></i></a>
+			<a href="twitter.com"><i class="c-alpine  mr-10 fa-brands fa-twitter fa-2x"></i></a>
+			<a href="facebook.com"><i class="c-alpine  mr-10 fa-brands fa-facebook fa-2x"></i></a>
+			<a href="apple.com"><i class="c-alpine  mr-10 fa-brands fa-apple fa-2x"></i></a>
+		</div>
 	</section>
 
 	<!-- section - one - hero -->
@@ -60,7 +60,7 @@
 			</div>
 			<h1>Welcome to Apple Store, nothing is imposible</h1>
 			<p>Everything you love about an Apple Store is online: all the products, personal shopping help, trade-in, flexible payment options, and expert support.</p>
-			<a class="apple_button" href="/">Buy Now With $199</a>
+			<a class="apple_button" href="#shop">Go to shop</a>
 		</div>
 	</section>
 
@@ -127,189 +127,158 @@
 			</div>
 		</div>
 	</section>
-	
-	<!-- section-four -->
-<section id="section-four-why-apple-watch">
-  <h1  class="title-apple-h1">Why Apple Watch ?</h1>
-  <div class="container_section_one">
-    <div class="container_image">
-      <img src="./assets/images/showcase-4.png" alt="no-foto">
-    </div>
-    <div>
-      <h3 class="title-apple-h3">Your Health in a watch</h3>
-      <p> All Apple Watch models include a heart rate monitor and the Health app to display your health profile and Medical ID. </p>
-      <a class="apple_button" href="/">Buy Now With $199</a>
-    </div>
-  </div>
-</section>
-
-
-<section id="store-galery">
-	<h1 id="shop" class="title-apple-h1">Buy your favorite apple watch</h1>
-	<main id="container_shop">
-
-	</main>
-	
-	<div class="modal-contenedor">
-			<div class="modal-carrito">
-					<h3 class="c-grey">	<i class= "c-grey logo_app fa-brands fa-apple"> </i>Apple shop cart </h3>
-					<button id="carritoCerrar"><i class="fas fa-times-circle"></i></button>
-					<div id="container_cart">
-							
-					</div>
-					<p class="precioProducto">Precio total: $<span id="total-price-cart">0</span></p>
-					<div class="d-flex" style="width:100%">
-						<button id="delete-all-cart" class="button_delete_cart">Delete All</button>
-						<button onclick="buyNow()" id="buy-all-cart" class="button_buy_cart">Buy now !</button>
-					</div>
 		
+		<!-- section-four -->
+	<section id="section-four-why-apple-watch">
+		<h1  class="title-apple-h1">Why Apple Watch ?</h1>
+		<div class="container_section_one">
+			<div class="container_image">
+				<img src="./assets/images/showcase-4.png" alt="no-foto">
 			</div>
-	</div>
-</section>
+			<div>
+				<h3 class="title-apple-h3">Your Health in a watch</h3>
+				<p> All Apple Watch models include a heart rate monitor and the Health app to display your health profile and Medical ID. </p>
+				<a class="apple_button" href="#shop">Go to shop</a>
+			</div>
+		</div>
+	</section>
 
 
-<section>
-  <div class="container_section_one">
-    <div class="container_image">
-      <img src="./assets/images/showcase-3.png" alt="no-foto">
-    </div>
-    <div>
-      <h3 class="title-apple-h3">Your gym in a watch</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, modi fugit in veritatis labore perferendis. Minima hic at, nostrum nihil! </p>
-      <a class="apple_button" href="/">Buy Now With $199</a>
-    </div>
-  </div>
-</section>
+	<section id="store-galery">
+		<h1 id="shop" class="title-apple-h1">Buy your favorite apple watch</h1>
+		<main id="container_shop">
 
-
-
-
-
-
-
-
-
-
-
-
-
-<section>
-<div class="container_call_to_action">
-	<div class="container_call_to_action_text">
-		<h1>Register in our Newsletter</h1>
-		<p>let your e-mail here, and you`ll recive </p>
-
-
-		<form id="correo" class="call_to_action_form">
-			<input type="text" id="correo" class="form-control" name="email" placeholder="your email" required>
-			<button type="text" onclick="usuariosMails(form.correo.value)" class="yellow-button-form">Suscribe</button>
+		</main>
 		
-		</form>
+		<div class="modal-contenedor">
+				<div class="modal-carrito">
+						<h3 class="c-grey">	<i class= "c-grey logo_app fa-brands fa-apple"> </i>Apple shop cart </h3>
+						<button id="carritoCerrar"><i class="fas fa-times-circle"></i></button>
+						<div id="container_cart">
+								
+						</div>
+						<p class="precioProducto">Precio total: $<span id="total-price-cart">0</span></p>
+						<div class="d-flex" style="width:100%">
+							<button id="delete-all-cart" class="button_delete_cart">Delete All</button>
+							<button onclick="buyNow()" id="buy-all-cart" class="button_buy_cart">Buy now !</button>
+						</div>
+			
+				</div>
+		</div>
+	</section>
 
 
-	</div>
-</div>
-</section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<section id="stores">
-
-
-	<div id="container_stores">
-		<h1>Looking for our Oficial Stores</h1>
-			<input class="form-control-search" type="text" name="search" id="search" placeholder="Search...">
-
-			<ul id="listaArticulos" style="color: black">
-					<p class="articulo"><i class="c-yellow fa-solid fa-location-dot"></i> 9 de Julio 2340, Caba, Buenos Aires</p>
-					<p class="articulo"><i class="c-yellow fa-solid fa-location-dot"></i> Libertador 2030, CABA, Buenos Aires</p>
-					<p class="articulo"><i class="c-yellow fa-solid fa-location-dot"></i> Santa Fe 2030, CABA, Buenos Aires</p>
-					<p class="articulo"><i class="c-yellow fa-solid fa-location-dot"></i> Cabildo 2340, Caba, Buenos Aires</p>
-					<p class="articulo"><i class="c-yellow fa-solid fa-location-dot"></i> Libertador 2020, Vicente Lopez, Zona Norte</p>
-					<p class="articulo"><i class="c-yellow fa-solid fa-location-dot"></i> Alem 2030, Cordoba Capital, Cordoba</p>
-					<p class="articulo"><i class="c-yellow fa-solid fa-location-dot"></i> Francisco Figueroa 2020, Rosario, Santa Fe</p>
-					<p class="articulo"><i class="c-yellow fa-solid fa-location-dot"></i> Mansilla 230, Victoria, Entre Ríos</p>
-					<p class="articulo"><i class="c-yellow fa-solid fa-location-dot"></i> Mansilla 230, Victoria, San Luis</p>
-					<p class="articulo"><i class="c-yellow fa-solid fa-location-dot"></i> San Martín 230, Godoy Cruz, Mendoza</p>
-			</ul>
-
-	</div>
-
-
-</section>
-
-<section id="section-quotes">
-	<h1 class="title-apple-h1">Our customs</h1>
-	<div class="container_quotes">
-		
-		<div class="container_quotes_personal">
-			<i class="fa-solid fa-quote-left fa-4x yellow-color"></i>
-			<p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents.</p>
-			<div class="quotes_personal_profile">
-				<img src="./assets/images/avater.png" alt="no-foto">
+	<section>
+		<div class="container_section_one">
+			<div class="container_image">
+				<img src="./assets/images/showcase-3.png" alt="no-foto">
 			</div>
-			<h5>John Martin</h5>
-			<p>CEO, SliceTasks App</p>
-		</div>
-		<div class="container_quotes_personal">
-			<i class="fa-solid fa-quote-left fa-4x yellow-color"></i>
-			<p>The Apple Watch 5 isn't Apple's latest wearable but it's almost as good as the Apple Watch 6, and like that wearable it comes with a handy always-on display. 
-				That will allow you to see all of your key stats without having to turn on your watch's screen. You've got the choice of either a 40mm or 44mm case for this watch, and it comes with a wide variety of fitness features.</p>
-			<div class="quotes_personal_profile">
-				<img src="./assets/images/avatar4.jpg" alt="no-foto">
+			<div>
+				<h3 class="title-apple-h3">Your gym in a watch</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, modi fugit in veritatis labore perferendis. Minima hic at, nostrum nihil! </p>
+				<a class="apple_button" href="#shop">Go to shop</a>
 			</div>
-			<h5>Mark Simpson</h5>
-			<p>CEO, Marketing Vanilla</p>
 		</div>
-		<div class="container_quotes_personal">
-			<i class="fa-solid fa-quote-left fa-4x yellow-color"></i>
-			<p>The most exciting tech here is the fact that there's an ECG feature within the heart rate tracker. It can test your heart to see if you're at a high risk of atrial fibrillation, which will allow you to seek help earlier if your health is in danger. This is found on the Apple Watch 5 and up too, but not older models.</p>
-			<div class="quotes_personal_profile">
-				<img src="./assets/images/avatar5.jpg" alt="no-foto">
+	</section>
+
+	<section id="section-newsletter">
+		<div class="container_call_to_action">
+			<div class="container_call_to_action_text">
+				<h1>Register in our Newsletter</h1>
+				<p>let your e-mail here, and you`ll recive </p>
+				<form id="correo" class="call_to_action_form">
+					<input type="text" id="correo" class="form-control" name="email" placeholder="your email" required>
+					<button type="text" onclick="usuariosMails(form.correo.value)" class="yellow-button-form">Suscribe</button>
+				</form>
 			</div>
-			<h5>Jesse Li Kim</h5>
-			<p>CEO, Amazon Latin America</p>
 		</div>
-	</div>
-</section>
+	</section>
 
-<footer id="contact">
-	<div class="container_footer">
-		<h4><i class="logo-apple-black fa-brands fa-apple fa-xl"></i>Apple Store</h4>
-		<div class="container_footer_menu">
-			<a href="">Menu</a>
-			<a href="">Store</a>
-			<a href="">Contact</a>
-			<a href="">Newsletter</a>
+	<section id="stores">
+
+
+		<div id="container_stores">
+			<h1>Looking for our Oficial Stores</h1>
+				<input class="form-control-search" type="text" name="search" id="search" placeholder="Search...">
+
+				<ul id="listaArticulos" style="color: black">
+						<p class="articulo"><i class="c-yellow fa-solid fa-location-dot"></i> 9 de Julio 2340, Caba, Buenos Aires</p>
+						<p class="articulo"><i class="c-yellow fa-solid fa-location-dot"></i> Libertador 2030, CABA, Buenos Aires</p>
+						<p class="articulo"><i class="c-yellow fa-solid fa-location-dot"></i> Santa Fe 2030, CABA, Buenos Aires</p>
+						<p class="articulo"><i class="c-yellow fa-solid fa-location-dot"></i> Cabildo 2340, Caba, Buenos Aires</p>
+						<p class="articulo"><i class="c-yellow fa-solid fa-location-dot"></i> Libertador 2020, Vicente Lopez, Zona Norte</p>
+						<p class="articulo"><i class="c-yellow fa-solid fa-location-dot"></i> Alem 2030, Cordoba Capital, Cordoba</p>
+						<p class="articulo"><i class="c-yellow fa-solid fa-location-dot"></i> Francisco Figueroa 2020, Rosario, Santa Fe</p>
+						<p class="articulo"><i class="c-yellow fa-solid fa-location-dot"></i> Mansilla 230, Victoria, Entre Ríos</p>
+						<p class="articulo"><i class="c-yellow fa-solid fa-location-dot"></i> Mansilla 230, Victoria, San Luis</p>
+						<p class="articulo"><i class="c-yellow fa-solid fa-location-dot"></i> San Martín 230, Godoy Cruz, Mendoza</p>
+				</ul>
+
 		</div>
-		<p>Copyright © Apple Store Watch Market</p>
-		<div class="footer_contact d-flex justify-content-center align-items-center">
-			<a href="instagram.com"><i class="c-black mr-10 fa-brands fa-instagram"></i></a>
-			<a href="twitter.com"><i class="c-black mr-10 fa-brands fa-twitter"></i></a>
-			<a href="facebook.com"></a><i class="c-black mr-10 fa-brands fa-facebook"></i></a>
-			<a href="apple.com"></a><i class="c-black mr-10 fa-brands fa-apple"></i></a>
+
+
+	</section>
+
+	<section id="section-quotes">
+		<h1 class="title-apple-h1">Our customs</h1>
+		<div class="container_quotes">
+			
+			<div class="container_quotes_personal">
+				<i class="fa-solid fa-quote-left fa-4x c-yellow"></i>
+				<p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents.</p>
+				<div class="quotes_personal_profile">
+					<img src="./assets/images/avater.png" alt="no-foto">
+				</div>
+				<h5>John Martin</h5>
+				<p>CEO, SliceTasks App</p>
+			</div>
+			<div class="container_quotes_personal">
+				<i class="fa-solid fa-quote-left fa-4x c-yellow"></i>
+				<p>The Apple Watch 5 isn't Apple's latest wearable but it's almost as good as the Apple Watch 6, and like that wearable it comes with a handy always-on display. 
+					That will allow you to see all of your key stats without having to turn on your watch's screen. You've got the choice of either a 40mm or 44mm case for this watch, and it comes with a wide variety of fitness features.</p>
+				<div class="quotes_personal_profile">
+					<img src="./assets/images/avatar4.jpg" alt="no-foto">
+				</div>
+				<h5>Mark Simpson</h5>
+				<p>CEO, Marketing Vanilla</p>
+			</div>
+			<div class="container_quotes_personal">
+				<i class="fa-solid fa-quote-left fa-4x c-yellow"></i>
+				<p>The most exciting tech here is the fact that there's an ECG feature within the heart rate tracker. It can test your heart to see if you're at a high risk of atrial fibrillation, which will allow you to seek help earlier if your health is in danger. This is found on the Apple Watch 5 and up too, but not older models.</p>
+				<div class="quotes_personal_profile">
+					<img src="./assets/images/avatar5.jpg" alt="no-foto">
+				</div>
+				<h5>Jesse Li Kim</h5>
+				<p>CEO, Amazon Latin America</p>
+			</div>
 		</div>
-	</div>
-</footer>
+	</section>
+
+	<footer id="contact">
+		<div class="container_footer">
+			<h4><i class="logo-apple-black fa-brands fa-apple fa-xl"></i>Apple Store</h4>
+			<div class="container_footer_menu">
+				<a href="">Menu</a>
+				<a href="">Store</a>
+				<a href="">Contact</a>
+				<a href="">Newsletter</a>
+			</div>
+			<p>Copyright © Apple Store Watch Market</p>
+			<div class="footer_contact d-flex justify-content-center align-items-center">
+				<a href="instagram.com"><i class="c-black mr-10 fa-brands fa-instagram"></i></a>
+				<a href="twitter.com"><i class="c-black mr-10 fa-brands fa-twitter"></i></a>
+				<a href="facebook.com"></a><i class="c-black mr-10 fa-brands fa-facebook"></i></a>
+				<a href="apple.com"></a><i class="c-black mr-10 fa-brands fa-apple"></i></a>
+			</div>
+		</div>
+	</footer>
 
 
 
-<!-- personal folder scripts -->
-<script src="./js/main.js"></script>
-<script src="./js/cart.js"></script>
-<script src="./js/modal.js"></script>
-
+	<!-- personal folder scripts -->
+	<script src="./js/main.js"></script>
+	<script src="./js/cart.js"></script>
+	<script src="./js/modal.js"></script>
 
 </body>
 </html>

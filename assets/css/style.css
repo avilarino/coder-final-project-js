@@ -1,9 +1,10 @@
 
 .contact {
-	display: block;
+	display: flex;
+	flex-direction:column;
+	justify-content: center;
 	position: fixed;
 	top: 200px;
-	padding: 10px
 }
 
 /* constants ----------------------------------------------------------- */
@@ -67,16 +68,13 @@ section {
 
 .apple_button:hover {
 	color: #fff;
-	text-decoration: none
+	text-decoration: none;
+	opacity: 0.7
 }
 
-.logo-apple-black {
-	color: #1d1d1f;
-	margin-right: 10px
-}
 
 .logo_app {
-	color: black
+	color: #1d1d1f
 }
 
 .c-grey {
@@ -172,14 +170,15 @@ section {
 .modal-contenedor {
 	position: fixed;
 	top: 0;
-	width: 100%;
+	left: -1px;
+	width: 101%;
 	height: 100vh;
-	background-color: rgba(0, 0, 0, 0.3);
+	background-color: #1d1d1f;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	transition: all .5s;
-	opacity: 0;
+	opacity: 0.8;
 	visibility: hidden;
 }
 
@@ -291,21 +290,16 @@ section {
 	margin-top: 20px;
 	width: 60%;
 	border-radius: 25px;
-	border: 1px solid black;
+	border: 1px solid #1d1d1f;
 	height: 50px
 }
-
-
-
-
-
 
 .logo_app {
 	margin-right: 20px;
 }
 
 .logo_cart {
-	color: black;
+	color: #1d1d1f;
 	position: relative;
 	bottom: 3px
 }
@@ -441,7 +435,7 @@ nav {
 	top: 0;
 	padding: 0 5%;
 	height: 50px;
-  background-color: #888
+  background-color: #1d1d1f
 }
 nav .logo {
 	float: left;
@@ -450,7 +444,7 @@ nav .logo {
 	display: flex;
 	align-items: center;
 	font-size: 24px;
-	color: black;
+	color: #1d1d1f;
 }
 nav .links {
 	float: right;
@@ -561,11 +555,12 @@ nav .icon-burger .line {
 
 .container_section_two {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	color: #3c3c3c
+	color: #3c3c3c;
+	margin-left: 100px
 }
 
 
@@ -725,20 +720,21 @@ nav .icon-burger .line {
 
 .container_quotes {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	justify-content: center;
-	align-items: center;
+	margin-top: 0
 	
 }
 
 .container_quotes_personal {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
 	text-align:center;
 	width: 400px;
-	margin-bottom: 70px
+	margin-top: 0;
+	padding: 10px
 }
 
 .quotes_personal_profile {
@@ -768,6 +764,12 @@ footer {
 	margin-bottom: 0
 }
 
+.logo-apple-black {
+	color: #1d1d1f;
+	margin-right: 10px
+}
+
+
 .container_footer {
 	background-color: #cccccc;
 	color: #1d1d1f;
@@ -775,7 +777,7 @@ footer {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding: 90px
+	padding: 90px;
 }
 
 .container_footer p {
@@ -820,7 +822,7 @@ footer {
 		height: auto;
 		flex-direction: column;
 		justify-content: space-evenly;
-		background-color: rgba(0,0,0,.8);
+		background-color: #1d1d1f;
 		overflow: hidden;
 		box-sizing: border-box;
 		transition: all .5s ease-in-out;
@@ -851,6 +853,23 @@ footer {
 	
 	.contact a {
 	display: none
+}
+
+.container_section_two {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-left: 0
+}
+
+.container_quotes {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 0
+	
 }
 
 

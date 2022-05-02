@@ -182,6 +182,9 @@ const updateCart = () => {
 
 }
 
+const buyNow = () => {
+  swal("Thank You", "your buy is going to your home", "success")
+}
 
 
 

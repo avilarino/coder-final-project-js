@@ -53,6 +53,7 @@ window.onscroll = function(){
 
   if(top >= 100){
     navbar.classList.add("bg-black");
+    navbar.style.opacity = 0.9
    
 
   } else {

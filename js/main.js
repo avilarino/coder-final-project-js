@@ -13,9 +13,8 @@ const newsLetter = []
 const usuariosMails = (correo) => {
 
   let expReg = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/
-  let valido = expReg.test(correo)
-
-
+  
+  let valido = (expReg.test(correo) && !null)
 
   if(valido == true) {
     newsLetter.push(correo)
@@ -40,6 +39,10 @@ userMail.append(user)
 
 
 
+
+
+
+
 // navbar ---------------------------------------
 
 const navbar = document.getElementById("navbar");
@@ -50,6 +53,7 @@ window.onscroll = function(){
 
   if(top >= 100){
     navbar.classList.add("bg-black");
+   
 
   } else {
     navbar.classList.remove("bg-black");

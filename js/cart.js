@@ -65,6 +65,17 @@ let stockProductos = [
   
 ]
 
+/* destructuring 
+let {name, price} = stockProductos
+
+
+function sumar(x, y, z) {
+  return x + y + z;
+}
+const numbers = [1, 2, 3];
+console.log(sumar(...numbers));
+
+*/
 
 const containerShop = document.getElementById('container_shop')
 const containerCart = document.getElementById('container_cart')
@@ -162,6 +173,7 @@ const updateCart = () => {
     localStorage.setItem('carrito', JSON.stringify(carrito))
 
   })
+
   
   counterCart.innerText = carrito.length
   counterCart.classList.add("c-yellow")

@@ -28,7 +28,7 @@ My name is Agustin Vilariño, i am software developer from  📌  Buenos Aires, 
 
 ![Screenshot](https://raw.githubusercontent.com/avilarino/coder-final-project-js/master/assets/designs/apple-project.png)
 
-![Screenshot](https://raw.githubusercontent.com/avilarino/coder-final-project-js/master/assets/designs/apple-project-2.png)
+![Screenshot](https://raw.githubusercontent.com/avilarino/coder-final-project-js/master/assets/designs/picture-project-2.png)
 
 ### Link to Github Pages
  - :)

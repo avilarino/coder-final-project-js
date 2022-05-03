@@ -1,7 +1,43 @@
 
-## Welcome to Final Project CoderHouse-Javascript
-# APP WATCH STORE
+# :zap::zap::zap: Coderhouse - Final Proyect - Javascript :zap::zap::zap:
 
+### :computer: Coded by -------------- :saxophone:- Agustin Vilariño - :saxophone:
+
+Welcome !!
+
+My name is Agustin Vilariño, i am software developer from  📌  Buenos Aires, Argentina  🌎  , yes ! the land of Lio Messi  ⚽  . This is my final project from coderhouse with the teacher Yael Rouffe 👋  👋
+
+📚  Concepts involved  📚
+
+-   Mobile first
+-   Responsive Design
+-   HTML 5 semantic
+-   CSS
+-   Flexbox
+-   Javascript
+-   Sweet Alert
+-   Async Await
+-   Local Storage
+-   DOM
+-   Functions
+-   Objects
+-   JSON
+-   Javascript Libraries - (Sweet Alert)
+
+📐  Design  📐
+
+[](https://raw.githubusercontent.com/avilarino/coderhouse-final-project/master/assets/design/apple-project.png)
+
+[](https://raw.githubusercontent.com/avilarino/coderhouse-final-project/master/assets/design/apple-project-2.png)
+
+
+
+Follow Me  🙌  ☎️
+
+-   Social Media:
+    -   [Linkedin](https://www.linkedin.com/in/agust%C3%ADn-vilari%C3%B1o-17914564/)
+        
+    -   [Github](https://github.com/avilarino)
 
 
 

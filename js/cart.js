@@ -1,4 +1,4 @@
-let stockProductos = [
+let stockWatch = [
   {
     "id": 1,
     "price": 100,
@@ -79,6 +79,7 @@ console.log(sumar(...numbers));
 
 const containerShop = document.getElementById('container_shop')
 const containerCart = document.getElementById('container_cart')
+const messageCart = document.getElementById('message-cart')
 const btnDeleteAll = document.getElementById('delete-all-cart')
 const counterCart = document.getElementById('counter-cart')
 const totalPrice = document.getElementById('total-price-cart')
@@ -101,18 +102,18 @@ btnDeleteAll.addEventListener('click', () => {
 })
 
 
-stockProductos.forEach((product) => {
+stockWatch.forEach((product) => {
   const div = document.createElement('div')
   div.classList.add('producto')
   div.innerHTML = `
   <img class="image-galery" src= ${product.img} alt= "no-foto">
   <h6>${product.name}</h6>
   <p>$${product.price}</p>
-  <button class="button-add-to-cart" id="agregar${product.id}">Add <i class="fas fa-shopping-cart"></i>+</button>
+  <button class="button-add-to-cart" id="add${product.id}">Add <i class="fas fa-shopping-cart"></i>+</button>
   `
   containerShop.appendChild(div)
 
-  const boton = document.getElementById(`agregar${product.id}`)
+  const boton = document.getElementById(`add${product.id}`)
    
     boton.addEventListener('click', () => {
         sendToCart(product.id)
@@ -122,6 +123,7 @@ stockProductos.forEach((product) => {
 
 
 const sendToCart = (prodId) => {
+
 
   const existe = carrito.some (prod => prod.id === prodId)
 
@@ -133,7 +135,7 @@ const sendToCart = (prodId) => {
           }
       })
   } else { 
-      const item = stockProductos.find((prod) => prod.id === prodId)
+      const item = stockWatch.find((prod) => prod.id === prodId)
       carrito.push(item)
   }
   updateCart()
@@ -187,9 +189,9 @@ const buyNow = () => {
   swal("Thank You", "your buy is going to your home", "success")
   } else {
     swal("Error", "The cart is empty!", "error")
+  
   }
 }
-
 
 
 

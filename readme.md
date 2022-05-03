@@ -1,5 +1,5 @@
 
-# :zap::zap::zap: Coderhouse - Final Proyect - Javascript :zap::zap::zap:
+# :zap::zap: Coderhouse - Final Proyect - Javascript :zap::zap::zap:
 
 ### :computer: Coded by -------------- :saxophone:- Agustin Vilariño - :saxophone:
 

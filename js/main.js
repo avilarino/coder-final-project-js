@@ -19,8 +19,6 @@ const usuariosMails = (correo) => {
   if(valido == true) {
     newsLetter.push(correo)
     localStorage.setItem("ingreso", JSON.stringify(correo))
-    
-    
     swal("Registrado", "You`ll get your email the next month", "success")
   } else {
     swal("Error", "Try again please !", "error")

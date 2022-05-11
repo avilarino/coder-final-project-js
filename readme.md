@@ -23,6 +23,7 @@ My name is Agustin Vilariño, i am software developer from  📌  Buenos Aires, 
 -   Objects
 -   JSON
 -   Javascript Libraries - (Sweet Alert)
+-   Fetch - Async - Await - promises
 
 📐  Design  📐
 

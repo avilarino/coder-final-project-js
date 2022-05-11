@@ -1,3 +1,4 @@
+// array productos
 let stockWatch = [
   {
     "id": 1,
@@ -65,18 +66,7 @@ let stockWatch = [
   
 ]
 
-/* destructuring 
-let {name, price} = stockProductos
-
-
-function sumar(x, y, z) {
-  return x + y + z;
-}
-const numbers = [1, 2, 3];
-console.log(sumar(...numbers));
-
-*/
-
+// DOM
 const containerShop = document.getElementById('container_shop')
 const containerCart = document.getElementById('container_cart')
 const messageCart = document.getElementById('message-cart')
@@ -124,8 +114,7 @@ stockWatch.forEach((product) => {
 
 const sendToCart = (prodId) => {
 
-
-  const existe = carrito.some (prod => prod.id === prodId)
+  const existe = carrito.some  (prod => prod.id === prodId)
 
   if (existe){ 
       const prod = carrito.map (prod => { 
@@ -142,19 +131,16 @@ const sendToCart = (prodId) => {
   console.log(carrito)
 }
 
-
-
-
-const deleteFromCart = (prodId) => {
-  const item = carrito.find((prod) => prod.id === prodId)
+const deleteFromCart = async (prodId) => {
+  const item = await carrito.find((prod) => prod.id === prodId)
 
   const indice = carrito.indexOf(item) 
 
   carrito.splice(indice, 1) 
   updateCart() 
+ 
   console.log(carrito)
 }
-
 
 const updateCart = () => {
 
@@ -192,12 +178,6 @@ const buyNow = () => {
   
   }
 }
-
-
-
-
-
-
 
 
 

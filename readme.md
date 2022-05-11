@@ -10,7 +10,7 @@ My name is Agustin Vilariño, i am software developer from  📌  Buenos Aires, 
 📚  Concepts involved  📚
 
 -   Mobile first
--   Responsive Design
+-   Responsive Design - min-width 565px - max width 770px
 -   HTML 5 semantic
 -   CSS
 -   Flexbox
